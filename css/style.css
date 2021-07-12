@@ -1,0 +1,168 @@
+/* fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color:#F3F1FF;
+
+}
+main{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+}
+.container{
+    background-color: white;
+    width: 870px;
+    padding: 30px;
+    margin-top: 21px;
+    border-radius:5px;
+    
+}
+
+/* top player style */
+.top-players{
+   
+    margin-bottom: 30px;
+}
+.section-title{
+    color:#562EFF;
+    font-size: 24px;
+    margin-top: 3px;
+
+}
+
+.players{
+    display: grid;
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-row-gap: 30px;
+}
+.player{
+    display: flex;
+    align-items: center;
+}
+.player img{
+    width: 56px;
+    height: 56px;
+}
+.player-name{
+    margin-left: 16px;
+    font-size: 16px;
+
+}
+
+hr{
+    border: 1px solid #423434;
+    margin-bottom: 27px;
+}
+
+/* .top blog style  */
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 26px;
+}
+.blog .thumbnail img{
+    width: 177px;
+    height: 117px;
+}
+.blog{
+    display: flex;
+}
+.blog-info{
+    margin-left: 16px;
+}
+.blog-title{
+    font-size: 20px;
+}
+.blog-author{
+    color: #9F9F9F ;
+    font-size: 16px;
+}
+
+.blog-author a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #562EFF;
+}
+
+/* courses styles */
+/* --------------------------------------------- */
+.courses{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-column-gap: 24px;
+
+}
+
+.course .course-banner img{
+    height: 104px;
+width: 224px;
+/* left: 324px; */
+/* top: 913px; */
+
+
+}
+
+
+.course-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fa-star.filled{
+    color: orange;
+    font-size: 12px;
+}
+.fa-star.empty{
+    color: #AEAEAE;
+    font-size: 12px;
+}
+
+/* media query started ---------- */
+
+/* mobile devieces */
+@media screen and (max-width:688px){
+    .container{
+        width: 100%;
+    }
+    .players,.blogs, .courses{
+        
+        grid-template-columns: repeat(1,1fr);
+    
+    }
+    .player, .blog {
+        flex-direction: column;
+    }
+
+
+   
+
+
+   
+}
+
+/* tablet devices */
+
+@media screen and (min-width:688px) and (max-width:992px){
+    .container{
+        width: 100%;
+    }
+    .players,.blogs, .courses{
+        
+        grid-template-columns: repeat(2,1fr);
+    
+    }
+    .player, .blog {
+        flex-direction: column;
+    }
+
+
+   
+
+
+   
+}
